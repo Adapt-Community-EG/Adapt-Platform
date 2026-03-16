@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adapt Events</title>
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="brand">
+                <a href="index.html" class="brand-link">
+                    <i class="fas fa-hand-heart"></i>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGYktHRAD/AP8A/6C9p5MAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjYtMDMtMTZUMTE6MzQ6NDMrMDA6MDBsPvKTAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI2LTAzLTE2VDExOjM0OjQzKzAwOjAwHWNKLwAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyNi0wMy0xNlQxMTozNDo0MyswMDowMEp2a/AAAAdISURBVFjDVZc7qGVnFcd//7X2PfvcxJlJzEMkgYQgmgfCNDERBRFfTRSbWImChYViIVEkaoiFYKVEOxGx0MZS0MJCtFCCgUCKRCPExChhkpnJxHnembv3t/4W33fuxHs55+zHOd+31v+x1tq658en7MXoMGCFtopaAlbjNahVeBG1CK+gRdQqWMAreAlqCdw8rkf//goshiVYm9Bhv+ZV1Bp4MSxiyo2xhGWcIkMoTCU4TARYoACHxjXjBJZAYZyFFiDA0VAGLFAZkGZawDKkcAhFwyEqYNLGENVvLomzEYtQighoCUp6VmGUwkFHK4zT5GFQYSKFUxBGAUpTYRwBCVo8PoWzH0+xbXgZi0bh3QZZKIIpTcXYPAKyIIQzOhIBjiIOGcf93NHvE8ZRVCQ6Ou/oomBir2fqcIc+OpQ7CkiTkShbhzsCj8y9yy6gwtTaOSdERs8+AxyBsqh1UJlQISLNhApPImJAl9BycB+iUjgaEQEylTXEaIjOsZd+SICzqOgbkV28ijbW7xpiiSMdTfaKiB7lRn2jLCoDHWpAJpxFpIgF2giW7FlXRBdXdpWnTKWJZah3ZE0yKO73tYipAYGRV6SEPWCCDCgVkQHRddCGWOcFDiM5qIKEedsd5KUjqfHaaYklqGA4yliJcrjAahTq/y5EIQXsdUs6ihagFBmBEv67mGPbhftvmbh0YF45LTKDOWGNnqkCKjvPLRsKERkdvVzR0hObzIoJRCAgCHBhQUxdUDEZDjvE568Unzu5x2MPH+fOExuWZv7yzwMe/80V/vNmst3CetjriI4E2WsJWSMpUdnQGkx2AQYVKClMOJCLolAkRDClOHep8egDG5766O0Y9YAFH7/3GHffMvHpn57n4sFEptChsXzdvrviNupKLKAowhSMV0ej0aJRKgqwG6I4kLn7ncUTD98MiCowIMHS4D237fP4p7YcsDJtC82g2cQMmgvmIjaQexBzEbOJTRF946Js7KLcsBuNla4PA42D9RrfOnmCW/Y3NHeR2gCwl1CGLzx4nE8+EFwq2Gw9NuqbaTbMBdseSMygLUTz+jYExqcb0CgWIhtvLiuP3DnzmbtvonpJx0BoRHD0Fzz5iWMcO7ZSeybHxjGb3PTzmA1bBiImGsXqhmmAMYUxthHFtbZy67b49slbARA9WwG//Mc5Xjh3cHS9Fdx72z5f+9DMBRq5b3IzENj2YDSDNiY2gyJrpVhZWWlHgTRMIeDC4cLX77uZu45tafbIHF65cMB3nn2Lnzz/1gh8VEPgKx84zkN3wRWZ3Deai9zxPrdxXGguwi5KDXulM18UjVRxYVn58O0bvvS+nn1ISADm+8+dJTP5w6mr/PbV84Q6MmXYy4nvfuQ409xgY9gabehobHpAmouYIUoDeBlruMDF4oZi4RvvfxehoNlH0P/8xdP86uXzXKuVc0vxzWfOcOryNVKDCsMH77iRL57ccNFmnkHbLsCcTQ4Rxlz/X4jCvR5IyeVVvPf4zEO3Hb+ePQBFc/HEyZuZIxHiaoO/vnGRz94zg2AwwWMP3sQfX3uD187DnnrprQCyjRkCpq74UYQUCBEUTcX+3oZNRvf725T+5fveTSeiX7/aGo/8/mWOzRs+dsdx1jJTiNcPVi4F7G2NWi/Pu0aFCk0i+jLGXvFQwIrZC/GvS1d57fJVBKxDgAaazVrmsHUb/uC5U/z57CE/fP4MB+vKFAI3nnz2DGfXYrNvtOlC1Fxoo66LuYhiuW5BF9BdkYJTB4c89fdXR96dAgEpEYI5xbNnLvCLl85x1zuSZ9484KkXTgPwsxfP8afXr3FiU6xqMINmDRe04QiRm0c//z3w0eL93RiznSaePnuJ1y9f4f6bbuCGKTv0LgCutZWvPv0q/77S2ISYQrzw1jXu3Icf/e08q3PowUh9gNHolAgkoWO//p01emHPMtGRjEQoubgUJ6aJO27csFUcffvCCqcPGvs5UWMVUNdAJqkJLOTYNXykCRnUoFYxOVZw0JyUIFgJR2/LBOWVE5uklXnp4jWMSEAOMpJtTCxuJBqiFHvRG0Wxm7aMKnrD95jfp0Tp4QL1QcQE5RzluOg/SdbqC80ZiKnTJZAbzQZN2CIxKPGuWbvPkbhAQZGENe53u0/NRVhInScD8oSH54UJcvSH1rkkB6wQQ8BFjnoCOdCD6kEAqHUXRaBBS9CYdu1H1cdzaTzFVLCqAzu5oQH+9QEmsKc+OVEj0z6PNUy6j3ZH/dKB1LDdgxOUk6m0IicSlIuwCfWHEmzsYFUQFOkdyzEW6ovVUIzVf28lJknXaNmDVqsrRaP2qMZIJoNz1ECPAc6DFmFPlLvCY9i0S7E6Ikq6DDt6MYJbh1ty0MjAEe+C0G4mFMj4KIiBsqt7VSseaijnWJYj4+60YQI7QUZuSAXO7gVB7tDbBUEw9SzgegspYOpBYLICqz/ZGMCiSdgw4aNG1hOpTuXgOEemQmO9IPB475X1f0zfYMS2Q5XHAAAAAElFTkSuQmCC" class="adapt-logo">Adapt
+                </a>
+            </div>
+        
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="events.html" class="nav-link active">Events</a>
+                    <a href="index.html#about" class="nav-link">About</a>
+                    <a href="index.html#committees" class="nav-link">Committees</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                    <a href="login.html" class="nav-link">Login</a>
+                </div>
+
+                <div class="user-section" id="user-section"></div>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="main">
+        <header>
+            Adapt events
+            <p class="sub">Learn more about Adapt events</p>
+        </header>
+        <section class="search-section">
+            <div class="container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" id="search" placeholder="Search for events">
+                </div>
+            </div>
+
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label for="location-filter">
+                        Location:
+                    </label>
+                    <select id="location-filter" class="location-filter">
+                        
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="date-filter">
+                        date:
+                    </label>
+                    <select id="date-filter" class="date-filter">
+                        
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="tag-filter">
+                        Tags:
+                    </label>
+                    <select id="tag-filter" class="tag-filter">
+                        
+                    </select>
+                </div>
+                <button class="filter-btn" onclick="ApplyFilters()">
+                    <i class="fas fa-filter"></i> Apply filters
+                </button>
+            </div>
+        </section>
+        <div>
+            <div id="events" class="events-grid">
+                <div class="loading">Loading events...</div>
+            </div>
+        </div>
+    </div>
+    <script src="events.js"></script>
+</body>
+</html>

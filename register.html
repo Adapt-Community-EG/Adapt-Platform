@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adapt Sign up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="brand">
+                <a href="index.html" class="brand-link">
+                    <i class="fas fa-hand-heart"></i>
+                    <img src="adapt.ico" class="adapt-logo">Adapt
+                </a>
+            </div>
+        
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="index.html#about" class="nav-link">About</a>
+                    <a href="index.html#committees" class="nav-link">Committees</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                    <a href="login.html" class="nav-link active">Join Us</a>
+                </div>
+
+                <div class="user-section" id="user-section"></div>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="container">
+            <div class="wrapper register-form">
+                <h1 class="form-title">Sign up</h1>
+
+                <form id="Register form">
+                    <div class="inputs">
+                        <label for="reg-username">Username</label>
+                        <input type="text" id="reg-username" name="username" placeholder="enter username here" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="reg-email">Email</label>
+                        <input type="email" id="reg-email" name="email" placeholder="enter Email here" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="reg-password">Password</label>
+                        <input type="password" id="reg-password" name="password" placeholder="enter Password here" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="reg-repassword">Confirm Password</label>
+                        <input type="password" id="reg-repassword" name="repassword" placeholder="Confirm Password here" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="reg-committee">Committee</label>
+                        <select id="reg-committee" name="committee" class="committee-select" required>
+                            <option value="" disabled selected>Select a committee</option>
+                            <option value="1">Creativity</option>
+                            <option value="2">Public Relations</option>
+                            <option value="3">Project Management</option>
+                            <option value="4">Media Production</option>
+                        </select>
+                    </div>
+                    <button type="button" class="submit-btn" onclick="Register()">Sign up</button>
+                </form>
+                <p class="register">
+                    Already have an account?
+                    <a href="login.html">Login</a>
+                </p>
+            </div>
+            <div class="msg" id="msg"></div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
