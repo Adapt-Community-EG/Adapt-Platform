@@ -110,6 +110,7 @@ window.logout = function() {
 async function loadDashboard() {
     await verify_token();
     document.getElementById('user-name-display').textContent = currentUser.name;
+    document.getElementById('committee-name').textContent = getCommitteeName(currentUser.committee);
     
     // Load committee info
     get_committee_news();
@@ -170,7 +171,7 @@ function getCommitteeIcon(committee) {
 }
 
 function getCommitteeName(committee) {
-    const names=["creativity","PM","PR","Media"];
+    const names=["creativity","PR","PM","Media"];
     return names[committee-1];
 }
 
